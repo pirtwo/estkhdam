@@ -1,0 +1,27 @@
+<div class="container min-h-screen p-5 md:px-40">
+    <!-- express ads -->
+    <h1 class="border-b-2 border-dashed text-lg font-black pb-2 mb-4">آگهی استخدام فوری</h1>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mb-10">
+        <% data.ads.forEach(ad => { %>
+            <%- include('partials/advertise', ad); %>
+        <% }); %>
+    </div>
+
+    <!-- lates ads -->
+    <h1 class="border-b-2 border-dashed text-lg font-black pb-2 mb-4">جدیدترین آگهی های استخدام</h1>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mb-10">
+        <% data.ads.forEach(ad => { %>
+            <%- include('partials/advertise', ad); %>
+        <% }); %>
+    </div>
+
+    <!-- regions ads -->
+    <h1 class="border-b-2 border-dashed text-lg font-black pb-2 mb-4">آگهی استخدام در استانها</h1>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+        <% data.regions.forEach(region => { %>
+        <a href="#">
+            <%= region %>
+        </a>
+        <% }); %>
+    </div>
+</div>

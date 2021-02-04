@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/app.css?v=<%= deployVersion%>">
+    <script defer src="js/regular.min.js"></script>
+    <script defer src="js/solid.min.js"></script>
+    <script defer src="js/fontawesome.min.js"></script>
+    <title>
+        استخدام دات کام - <%= title %>
+    </title>
+</head>
+
+<body>
+    <div class="container">        
+        <% if(header) { %>
+            <%- include('../partials/header') %>
+        <% } %>
+       
+        <%- include(body) %>
+       
+        <% if(footer) { %>
+            <%- include('../partials/footer') %>
+        <% } %>
+    </div>
+</body>
+
+</html>

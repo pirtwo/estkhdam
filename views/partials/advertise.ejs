@@ -1,0 +1,35 @@
+<!-- advertise -->
+<div class="flex flex-col rounded shadow px-4 py-3 bg-gray-100">
+    <!-- title -->
+    <div class="flex items-center">
+        <a class="text-lg text-blue-500" href="<%= url %>">
+            <%= title %>
+        </a>
+
+        <a href="#" class="mr-auto">
+            <i class="far fa-bookmark"></i>
+        </a>
+    </div>
+
+    <!-- footer -->
+    <div class="flex flex-col sm:flex-row sm:items-center text-sm mt-2">
+        <div class="flex items-center">
+            <i class="far fa-building"></i>
+            <div class="mr-2">
+                <%= publisher %>
+            </div>
+        </div>
+        <div class="flex items-center sm:mr-5">
+            <i class="far fa-map"></i>
+            <div class="mr-2">
+                <%= regions %>
+            </div>
+        </div>
+        <div class="flex items-center sm:mr-5">
+            <i class="far fa-clock"></i>
+            <div class="mr-2">
+                <%= date %>
+            </div>
+        </div>
+    </div>
+</div>
